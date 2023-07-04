@@ -1,0 +1,15 @@
+:root {
+  --theme-color: #69E166;
+  --dark-color: #242A33;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Inter', sans-serif;
+}
