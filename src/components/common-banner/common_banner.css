@@ -1,0 +1,15 @@
+.common-banner {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  background: #031d2ed2 url('../../assets/service-bg.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #fff !important;
+}
+
+.common-banner img {
+  max-width: 500px;
+  width: 100%;
+  margin-left: auto;
+}

@@ -1,0 +1,43 @@
+.banner-wrapper img {
+  width: 100%;
+  min-height: 90vh;
+  object-fit: cover;
+}
+
+.banner-text {
+  padding: 40px 0 !important;
+}
+
+.banner-text h1 {
+  font-weight: 600 !important;
+}
+
+.about-section {
+  background: url('../../assets/images/img1.png') no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 90vh;
+  text-align: center;
+}
+
+.innovation-section {
+  position: relative;
+  color: #fff;
+  padding-bottom: 220px;
+}
+
+.innovation-section .design1 {
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: auto;
+  opacity: 0.2;
+}
+
+.innovation-section .section-title {
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+  z-index: 1;
+}
