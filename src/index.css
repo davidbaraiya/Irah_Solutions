@@ -1,6 +1,17 @@
+@font-face {
+  font-family: 'Satoshi';
+  src: url('./assets/fonts/Satoshi-Variable.woff2') format('woff2'),
+    url('./assets/fonts/fonts/Satoshi-Variable.woff') format('woff'),
+    url('./assets/fonts/fonts/sa') format('truetype');
+  font-weight: 300 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+
 :root {
-  /* Satoshi */
   --first-font: 'Inter', sans-serif;
+  --second-font: 'Satoshi', 'Inter', sans-serif;
   --theme-color: #69E166;
   --dark-color: #242A33;
 
@@ -10,7 +21,7 @@
   --h4: normal 600 28px/1.2 var(--first-font);
   --h5: normal 600 20px/1.2 var(--first-font);
   --h6: normal 600 18px/1.2 var(--first-font);
-  --common-text: normal 400 15px/1.3 var(--first-font);
+  --common-text: normal 400 16px/1.4 var(--first-font);
 }
 
 * {
@@ -30,6 +41,10 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   color: inherit;
+}
+
+p {
+  font: var(--common-text) !important;
 }
 
 h1 {
@@ -84,6 +99,7 @@ img {
 
 .bg-dark {
   background: var(--dark-color) !important;
+  color: #fff !important;
 }
 
 .bg-theme {
@@ -98,14 +114,47 @@ img {
   color: var(--dark-color) !important;
 }
 
+.text-center {
+  text-align: center !important;
+}
 
+@media (max-width: 1200px) {
+  :root {
+    --h1: normal 700 38px/1.2 var(--first-font);
+    --h2: normal 700 38px/1.2 var(--first-font);
+    --h3: normal 600 28px/1.2 var(--first-font);
+    --h4: normal 600 24px/1.2 var(--first-font);
+  }
+}
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .pt {
     padding-top: 40px;
   }
 
   .pb {
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1: normal 700 32px/1.2 var(--first-font);
+    --h2: normal 700 32px/1.2 var(--first-font);
+    --h3: normal 600 24px/1.2 var(--first-font);
+    --h4: normal 600 22px/1.2 var(--first-font);
+    --h5: normal 600 18px/1.2 var(--first-font);
+    --h6: normal 600 16px/1.2 var(--first-font);
+  }
+}
+
+@media (max-width: 400px) {
+  :root {
+    --h1: normal 700 26px/1.2 var(--first-font);
+    --h2: normal 700 26px/1.2 var(--first-font);
+    --h3: normal 600 22px/1.2 var(--first-font);
+    --h4: normal 600 20px/1.2 var(--first-font);
+    --h5: normal 600 18px/1.2 var(--first-font);
+    --h6: normal 600 16px/1.2 var(--first-font);
   }
 }

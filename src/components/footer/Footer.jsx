@@ -1,9 +1,10 @@
 import React from "react";
 import "./footer.css";
-import { Box, Button, Container, Grid } from "@mui/material";
-import { NavLink } from "react-router-dom";
+import { Box, Button, Container, Grid, Typography } from "@mui/material";
+import { Link, NavLink } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
+import logo from "../../assets/images/logo.png";
 
 const Footer = () => {
   const navItems = [
@@ -13,7 +14,7 @@ const Footer = () => {
     },
     {
       name: "our service",
-      path: "/our_services",
+      path: "/services",
     },
     {
       name: "our team",
@@ -28,9 +29,18 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={4}>
+        <Grid container spacing={2} alignItems={"flex-end"}>
+          <Grid item sm={4}>
             <Box className="left-side">
+              <Typography
+                component="div"
+                sx={{ mb: 2 }}
+                className="desk-logo-wrapper"
+              >
+                <Link to={"/"}>
+                  <img src={logo} alt="logo" loading="lazy" />
+                </Link>
+              </Typography>
               <ul className="social-icons">
                 <li>
                   <a href="#" target="_blank">
@@ -55,11 +65,8 @@ const Footer = () => {
               </ul>
             </Box>
           </Grid>
-          <Grid item xs={8}>
-            <Box
-              className="right-side"
-              sx={{ display: { xs: "none", sm: "block" } }}
-            >
+          <Grid item sm={8} sx={{ paddingLeft: { xs: "0 !important" } }}>
+            <Box className="right-side">
               {navItems?.map(({ name, path }, i) => (
                 <NavLink to={path} className="nav-link" key={i}>
                   <Button

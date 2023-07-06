@@ -4,6 +4,7 @@ import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
+import Blogs from "./pages/blogs/Blogs";
 
 const App = () => {
   return (
@@ -11,7 +12,8 @@ const App = () => {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/our_services" element={<Services />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blogs" element={<Blogs />} />
       </Routes>
       <Footer />
     </BrowserRouter>

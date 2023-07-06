@@ -35,3 +35,31 @@
 .nav-link.active button::before {
     width: 100%;
 }
+
+.desk-logo-wrapper {
+    max-width: 180px;
+    width: 100%;
+    margin-right: auto !important;
+}
+
+.mobile-menu ul li a {
+    text-transform: capitalize !important;
+    font-size: 17px;
+    width: 100%;
+    text-align: left;
+}
+
+.mobile-menu .mobile-logo-wrapper {
+    max-width: 180px;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.mobile-menu .mobile-logo-wrapper img {
+    filter: invert(1);
+    -webkit-filter: invert(1);
+}
+
+.mobile-menu ul li a.active {
+    color: var(--theme-color) !important;
+}

@@ -16,14 +16,14 @@ const Home = () => {
           <Container>
             <Box className="banner-text">
               <Grid container spacing={2}>
-                <Grid item xs={7}>
+                <Grid item sm={7}>
                   <Box className="left-side">
                     <Typography variant="h1" component="h1">
                       Powerful IT <br /> Solutions With Irah
                     </Typography>
                   </Box>
                 </Grid>
-                <Grid item xs={5}>
+                <Grid item sm={5}>
                   <Box className="right-side">
                     <Typography variant="h6" component="h3" mb={2}>
                       We make it easy.

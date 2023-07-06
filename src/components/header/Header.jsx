@@ -19,6 +19,7 @@ import {
 import MenuIcon from "@mui/icons-material/Menu";
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import logo from "../../assets/images/logo.png";
 
 const drawerWidth = 250;
 const navItems = [
@@ -28,7 +29,7 @@ const navItems = [
   },
   {
     name: "our service",
-    path: "/our_services",
+    path: "/services",
   },
   {
     name: "our team",
@@ -37,6 +38,10 @@ const navItems = [
   {
     name: "career",
     path: "/career",
+  },
+  {
+    name: "blogs",
+    path: "/blogs",
   },
 ];
 
@@ -49,20 +54,25 @@ function Header(props) {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box
+      onClick={handleDrawerToggle}
+      sx={{ textAlign: "center" }}
+      className="mobile-menu"
+    >
       <Typography
         component="div"
         sx={{ my: 2 }}
         className="mobile-logo-wrapper"
       >
-        <Link to={"/"}>MUI</Link>
+        <Link to={"/"}>
+          <img src={logo} alt="logo" loading="lazy" />
+        </Link>
       </Typography>
       <Divider />
       <List>
         {navItems.map(({ name, path }, i) => (
           <ListItem key={i} disablePadding>
             <ListItemButton sx={{ textAlign: "center" }}>
-              {/* <ListItemText primary={name} /> */}
               <NavLink to={path}>{name}</NavLink>
             </ListItemButton>
           </ListItem>
@@ -79,13 +89,15 @@ function Header(props) {
       <CssBaseline />
       <AppBar component="nav" className="header" position="sticky">
         <Container className="container">
-          <Toolbar sx={{ padding: "0 !important" }}>
+          <Toolbar sx={{ padding: "7px 0 !important" }}>
             <Typography
               component="div"
               sx={{ flexGrow: 1 }}
               className="desk-logo-wrapper"
             >
-              <Link to={"/"}>MUI</Link>
+              <Link to={"/"}>
+                <img src={logo} alt="logo" loading="lazy" />
+              </Link>
             </Typography>
             <Box sx={{ display: { xs: "none", sm: "block" } }}>
               {navItems?.map(({ name, path }, i) => (
@@ -121,7 +133,7 @@ function Header(props) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: { xs: "block", sm: "none" },

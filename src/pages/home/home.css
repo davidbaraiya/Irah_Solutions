@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 90vh;
   object-fit: cover;
+  object-position: right;
 }
 
 .banner-text {
@@ -19,6 +20,10 @@
   width: 100%;
   min-height: 90vh;
   text-align: center;
+}
+
+.about-section p {
+  font-size: 24px !important;
 }
 
 .innovation-section {
@@ -40,4 +45,34 @@
   max-width: 500px;
   width: 100%;
   z-index: 1;
+}
+
+
+
+/* media  */
+@media (max-width:1200px) {
+  .innovation-section {
+    padding-bottom: 80px;
+  }
+}
+
+@media (max-width:768px) {
+  .innovation-section {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width:768px) {
+  .about-section {
+    min-height: 100%;
+    padding-bottom: 40px;
+  }
+
+  .about-section p {
+    font-size: 18px !important;
+  }
+
+  .about-section p br {
+    display: none !important;
+  }
 }

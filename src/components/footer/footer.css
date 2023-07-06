@@ -44,3 +44,24 @@ hr {
     margin-top: 20px;
     opacity: 0.2;
 }
+
+.footer .nav-link button::before {
+    display: none;
+}
+
+@media (max-width:600px) {
+    .social-icons li a {
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    footer .nav-link button {
+        margin-left: 15px !important;
+        font-size: 14px !important;
+    }
+
+    footer .nav-link:first-of-type button {
+        margin-left: 15px !important;
+    }
+}
