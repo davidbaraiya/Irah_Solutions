@@ -127,17 +127,9 @@ img {
   }
 }
 
-@media (max-width: 991px) {
-  .pt {
-    padding-top: 40px;
-  }
+@media (max-width: 991px) {}
 
-  .pb {
-    padding-bottom: 40px;
-  }
-}
-
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   :root {
     --h1: normal 700 32px/1.2 var(--first-font);
     --h2: normal 700 32px/1.2 var(--first-font);
@@ -146,9 +138,17 @@ img {
     --h5: normal 600 18px/1.2 var(--first-font);
     --h6: normal 600 16px/1.2 var(--first-font);
   }
+
+  .pt {
+    padding-top: 50px;
+  }
+
+  .pb {
+    padding-bottom: 50px;
+  }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 500px) {
   :root {
     --h1: normal 700 26px/1.2 var(--first-font);
     --h2: normal 700 26px/1.2 var(--first-font);

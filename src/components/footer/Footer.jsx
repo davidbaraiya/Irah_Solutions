@@ -5,6 +5,7 @@ import { Link, NavLink } from "react-router-dom";
 import { FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import { AiOutlineInstagram, AiOutlineTwitter } from "react-icons/ai";
 import logo from "../../assets/images/logo.png";
+import Fade from "react-reveal";
 
 const Footer = () => {
   const navItems = [
@@ -18,11 +19,15 @@ const Footer = () => {
     },
     {
       name: "our team",
-      path: "/our_team",
+      path: "/team",
     },
     {
       name: "career",
       path: "/career",
+    },
+    {
+      name: "blogs",
+      path: "/blogs",
     },
   ];
 
@@ -32,55 +37,61 @@ const Footer = () => {
         <Grid container spacing={2} alignItems={"flex-end"}>
           <Grid item sm={4}>
             <Box className="left-side">
-              <Typography
-                component="div"
-                sx={{ mb: 2 }}
-                className="desk-logo-wrapper"
-              >
-                <Link to={"/"}>
-                  <img src={logo} alt="logo" loading="lazy" />
-                </Link>
-              </Typography>
-              <ul className="social-icons">
-                <li>
-                  <a href="#" target="_blank">
-                    <FaFacebookF />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <AiOutlineInstagram />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <AiOutlineTwitter />
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank">
-                    <FaLinkedinIn />
-                  </a>
-                </li>
-              </ul>
+              <Fade>
+                <Typography
+                  component="div"
+                  sx={{ mb: 2 }}
+                  className="desk-logo-wrapper"
+                >
+                  <Link to={"/"}>
+                    <img src={logo} alt="logo" loading="lazy" />
+                  </Link>
+                </Typography>
+              </Fade>
+              <Fade left cascade>
+                <ul className="social-icons">
+                  <li>
+                    <a href="#" target="_blank">
+                      <FaFacebookF />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <AiOutlineInstagram />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <AiOutlineTwitter />
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" target="_blank">
+                      <FaLinkedinIn />
+                    </a>
+                  </li>
+                </ul>
+              </Fade>
             </Box>
           </Grid>
           <Grid item sm={8} sx={{ paddingLeft: { xs: "0 !important" } }}>
-            <Box className="right-side">
-              {navItems?.map(({ name, path }, i) => (
-                <NavLink to={path} className="nav-link" key={i}>
-                  <Button
-                    sx={{
-                      color: "#fff",
-                      marginLeft: "12px",
-                      padding: "4px 0 !important",
-                    }}
-                  >
-                    {name}
-                  </Button>
-                </NavLink>
-              ))}
-            </Box>
+            <Fade up cascade>
+              <div className="right-side">
+                {navItems?.map(({ name, path }, i) => (
+                  <NavLink to={path} className="nav-link" key={i}>
+                    <Button
+                      sx={{
+                        color: "#fff",
+                        marginLeft: "12px",
+                        padding: "4px 0 !important",
+                      }}
+                    >
+                      {name}
+                    </Button>
+                  </NavLink>
+                ))}
+              </div>
+            </Fade>
           </Grid>
         </Grid>
         <hr />

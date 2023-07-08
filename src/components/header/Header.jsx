@@ -3,21 +3,19 @@ import PropTypes from "prop-types";
 import {
   AppBar,
   Box,
-  CssBaseline,
   Divider,
   Drawer,
   IconButton,
   List,
   ListItem,
   ListItemButton,
-  ListItemText,
   Toolbar,
   Typography,
   Button,
   Container,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
@@ -33,19 +31,20 @@ const navItems = [
   },
   {
     name: "our team",
-    path: "/our_team",
+    path: "/team",
   },
   {
     name: "career",
     path: "/career",
   },
   {
-    name: "blogs",
-    path: "/blogs",
+    name: "blog",
+    path: "/blog",
   },
 ];
 
 function Header(props) {
+  // const [stickyHeader, setStickyHeader] = useState(false);
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -85,9 +84,13 @@ function Header(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <Box sx={{ display: "flex" }}>
-      <CssBaseline />
-      <AppBar component="nav" className="header" position="sticky">
+    <>
+      <AppBar
+        component="nav"
+        position="sticky"
+        className="header"
+        // className={stickyHeader ? "header sticky-header" : "header"}
+      >
         <Container className="container">
           <Toolbar sx={{ padding: "7px 0 !important" }}>
             <Typography
@@ -146,7 +149,7 @@ function Header(props) {
           {drawer}
         </Drawer>
       </Box>
-    </Box>
+    </>
   );
 }
 

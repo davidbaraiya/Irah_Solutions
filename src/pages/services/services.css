@@ -142,6 +142,11 @@
     height: 140px;
   }
 
+  .service-section .ser-design1,
+  .service-section .ser-design2 {
+    max-width: 300px;
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -153,5 +158,37 @@
   .icon-box {
     width: 50px;
     height: 50px;
+  }
+
+  .service-details .icon-box {
+    width: 40px;
+    height: 40px;
+  }
+
+  .service-details .sub-title {
+    font-size: 18px !important;
+  }
+
+  .service-details ul li {
+    font-size: 16px;
+  }
+
+  .service-provide h6 {
+    font-size: 20px !important;
+  }
+}
+
+
+@media (max-width:600px) {
+  .service-details ul {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width:450px) {
+  .col {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 1 1 100% !important;
   }
 }

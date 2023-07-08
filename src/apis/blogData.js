@@ -1,4 +1,4 @@
-import blog_img1 from "../assets/images/blog-side.png";
+import blog_img1 from "../assets/images/service1.png";
 
 const blogData = [
   {

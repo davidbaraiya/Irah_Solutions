@@ -35,6 +35,11 @@
     -o-transition: all 0.3s ease-in-out;
 }
 
+.social-icons li a svg {
+    width: 90%;
+    height: 90%;
+}
+
 .social-icons li a:hover {
     border-color: var(--theme-color);
     background: transparent;
@@ -47,6 +52,13 @@ hr {
 
 .footer .nav-link button::before {
     display: none;
+}
+
+@media (max-width:767px) {
+    .social-icons li a {
+        width: 30px;
+        height: 30px;
+    }
 }
 
 @media (max-width:600px) {

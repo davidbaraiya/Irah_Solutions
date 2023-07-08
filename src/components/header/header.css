@@ -1,5 +1,14 @@
 .header {
     background: var(--dark-color) !important;
+    position: sticky;
+    top: 0;
+}
+
+.header.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
 }
 
 .nav-link button {
@@ -62,4 +71,16 @@
 
 .mobile-menu ul li a.active {
     color: var(--theme-color) !important;
+}
+
+
+@media (max-width:767px) {
+    .nav-link button {
+        font-size: 14px !important;
+        margin-left: 20px !important;
+    }
+
+    .desk-logo-wrapper {
+        max-width: 150px;
+    }
 }
