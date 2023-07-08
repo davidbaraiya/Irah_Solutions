@@ -7,13 +7,13 @@ const BlogCard = ({ blogData, flexCoulum }) => {
 
   return (
     <Box className="blog-card" flexDirection={flexCoulum ? "" : "row-reverse"}>
-      <Zoom>
+      <Fade up>
         <div className="img-wrapper">
           <img src={image} alt="img" loading="lazy" />
         </div>
-      </Zoom>
+      </Fade>
       <div className="blog-content">
-        <Fade right left={!flexCoulum}>
+        <Fade up>
           <Typography component={"h3"} color="#6DEB6A" mb={2}>
             {title}
           </Typography>

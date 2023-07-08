@@ -82,6 +82,10 @@ img {
   display: block;
 }
 
+button {
+  font-family: var(--first-font) !important;
+}
+
 .pt {
   padding-top: 80px;
 }

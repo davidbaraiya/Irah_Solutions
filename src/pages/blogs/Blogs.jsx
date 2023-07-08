@@ -8,7 +8,7 @@ import blog_hero from "../../assets/images/blog-hero.png";
 import strategy from "../../assets/icons/strategy.svg";
 import growth from "../../assets/icons/growth.svg";
 import talent from "../../assets/icons/talent.svg";
-import { Fade, Zoom } from "react-reveal";
+import { Fade, Zoom, Slide } from "react-reveal";
 import Matrix from "../../components/Matrix";
 
 const Blogs = () => {
@@ -43,7 +43,7 @@ const Blogs = () => {
           >
             <Grid item md={6}>
               <Box className="left-side">
-                <Fade left cascade>
+                <Slide up cascade>
                   <div>
                     <Typography component="h2" mb={2}>
                       <span className="text-theme"> Build & Scale </span>
@@ -59,7 +59,7 @@ const Blogs = () => {
                     </Typography>
                     <Button>Schedule an introductory call</Button>
                   </div>
-                </Fade>
+                </Slide>
                 <Stack
                   direction={{ xs: "column", sm: "row" }}
                   alignItems={{ xs: "flex-start", sm: "center" }}
@@ -81,7 +81,7 @@ const Blogs = () => {
               </Box>
             </Grid>
             <Grid item md={6}>
-              <Fade right>
+              <Fade up>
                 <Box className="right-side">
                   <img src={blog_hero} alt="img" loading="lazy" />
                 </Box>

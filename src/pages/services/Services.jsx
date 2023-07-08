@@ -57,7 +57,7 @@ const Services = () => {
       <CommonBanner heroDetail={heroDetail} />
       <section className="service-provide pb bg-dark pt">
         <Container>
-          <Box left cascade>
+          <Box up cascade>
             <Typography variant="h6">
               <Fade left cascade>
                 We are not just a product company; we are a team of dreamers,
@@ -96,19 +96,19 @@ const Services = () => {
                     flexDirection: { xs: "column", sm: "row" },
                   }}
                 >
-                  <Fade>
+                  <Fade up>
                     <div className="icon-box">
                       <img src={img} alt="icon" />
                     </div>
                   </Fade>
                   <div>
-                    <Fade>
+                    <Fade up>
                       <Typography component="h3" mb={2}>
                         {heading}
                       </Typography>
                       <Typography className="sub-title">{subtitle}</Typography>
                     </Fade>
-                    <Fade left cascade>
+                    <Fade up cascade>
                       <ul style={{ marginTop: "15px" }}>
                         {list?.map((list, i) => (
                           <li key={i}>{list}</li>

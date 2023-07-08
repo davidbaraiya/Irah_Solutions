@@ -37,7 +37,7 @@ const Footer = () => {
         <Grid container spacing={2} alignItems={"flex-end"}>
           <Grid item sm={4}>
             <Box className="left-side">
-              <Fade>
+              <Fade up cascade>
                 <Typography
                   component="div"
                   sx={{ mb: 2 }}
@@ -48,7 +48,7 @@ const Footer = () => {
                   </Link>
                 </Typography>
               </Fade>
-              <Fade left cascade>
+              <Fade up cascade>
                 <ul className="social-icons">
                   <li>
                     <a href="#" target="_blank">

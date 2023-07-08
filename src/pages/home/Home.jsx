@@ -4,15 +4,12 @@ import "./home.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import banner from "../../assets/images/home-banner.png";
 import design1 from "../../assets/images/design1.png";
-// import design2 from "../../assets/images/design2.svg";
 import { Fade } from "react-reveal";
-import Matrix from "../../components/Matrix";
 
 const Home = () => {
   return (
     <>
       <section className="home-banner">
-        {/* <Matrix /> */}
         <Fade>
           <div className="banner-wrapper">
             <img src={banner} alt="banner" loading="lazy" />
@@ -68,7 +65,7 @@ const Home = () => {
       <section className="innovation-section bg-dark pt">
         <img src={design1} alt="img" loading="lazy" className="design1" />
         <Container>
-          <Fade left cascade>
+          <Fade up cascade>
             <div className="section-title">
               <Typography component="h2" mb={2}>
                 Welcome to Our World of{" "}

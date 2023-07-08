@@ -24,7 +24,7 @@ const Matrix = () => {
       context.fillRect(0, 0, canvas.width, canvas.height);
 
       context.fillStyle = "#0F0";
-      context.font = fontSize + "px monospace";
+      context.font = fontSize + "px Inter";
 
       for (let i = 0; i < rainDrops.length; i++) {
         const text = alphabet.charAt(
