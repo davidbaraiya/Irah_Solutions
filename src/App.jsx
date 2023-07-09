@@ -5,32 +5,41 @@ import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import Blogs from "./pages/blogs/Blogs";
-import Preloader from "./components/Preloader";
+// import Preloader from "./components/Preloader";
 
 const App = () => {
-  const [loading, setLoading] = useState(true);
-
-  window.onload = () => {
-    setLoading(false);
-  };
+  // const [loading, setLoading] = useState(true);
+  // window.onload = () => {
+  //   setLoading(false);
+  // };
 
   return (
     <BrowserRouter>
-      {loading ? (
-        <Preloader />
-      ) : (
-        <>
-          <Header />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/blog" element={<Blogs />} />
-          </Routes>
-          <Footer />
-        </>
-      )}
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/blog" element={<Blogs />} />
+      </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
 
 export default App;
+
+//  <BrowserRouter>
+//   {loading ? (
+//     <Preloader />
+//   ) : (
+//     <>
+//       <Header />
+//       <Routes>
+//         <Route path="/" element={<Home />} />
+//         <Route path="/services" element={<Services />} />
+//         <Route path="/blog" element={<Blogs />} />
+//       </Routes>
+//       <Footer />
+//     </>
+//   )}
+// </BrowserRouter>
