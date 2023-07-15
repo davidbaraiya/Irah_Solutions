@@ -1,18 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import Footer from "./components/footer/Footer";
 import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import Blogs from "./pages/blogs/Blogs";
-// import Preloader from "./components/Preloader";
+import DigitalSolution from "./pages/digital-solution/DigitalSolution";
 
 const App = () => {
-  // const [loading, setLoading] = useState(true);
-  // window.onload = () => {
-  //   setLoading(false);
-  // };
-
   return (
     <BrowserRouter>
       <Header />
@@ -20,6 +15,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blogs />} />
+        <Route path="/digital_solution" element={<DigitalSolution />} />
       </Routes>
       <Footer />
     </BrowserRouter>
@@ -27,19 +23,3 @@ const App = () => {
 };
 
 export default App;
-
-//  <BrowserRouter>
-//   {loading ? (
-//     <Preloader />
-//   ) : (
-//     <>
-//       <Header />
-//       <Routes>
-//         <Route path="/" element={<Home />} />
-//         <Route path="/services" element={<Services />} />
-//         <Route path="/blog" element={<Blogs />} />
-//       </Routes>
-//       <Footer />
-//     </>
-//   )}
-// </BrowserRouter>

@@ -57,7 +57,9 @@ const Blogs = () => {
                       SS provides On Demand Products & Growth expertise to fast
                       growing technology Startups.
                     </Typography>
-                    <Button>Schedule an introductory call</Button>
+                    <Button className="btn">
+                      Schedule an introductory call
+                    </Button>
                   </div>
                 </Slide>
                 <Stack
@@ -90,7 +92,6 @@ const Blogs = () => {
           </Grid>
         </Container>
       </section>
-
       <section className="blogs-section  bg-dark pt pb">
         <Container>
           <Box>

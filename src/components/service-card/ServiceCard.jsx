@@ -6,7 +6,7 @@ const ServiceCard = ({ servicesData }) => {
   const { img, desc } = servicesData;
   return (
     <Card sx={{ maxWidth: "100%", width: "100%" }} className="service-card">
-      <CardMedia component="img" alt="img" height="180" image={img} />
+      <CardMedia component="img" alt="img" image={img} />
       <CardContent>
         <Typography variant="body2" color="text.secondary">
           {desc}

@@ -122,6 +122,19 @@ button {
   text-align: center !important;
 }
 
+.btn {
+  background-color: #CEE6CD !important;
+  padding: 12px 40px;
+  color: #1C1C1C !important;
+  border: 1px solid var(--theme-color) !important;
+  font-weight: 600;
+  margin: 30px 0;
+}
+
+.btn:hover {
+  background-color: #a3bba2 !important;
+}
+
 @media (max-width: 1200px) {
   :root {
     --h1: normal 700 38px/1.2 var(--first-font);

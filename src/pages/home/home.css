@@ -15,7 +15,7 @@
 
 .about-section {
   position: relative;
-  background: url('../../assets/images/img1.png') no-repeat;
+  background: url('../../assets/images/handshake.gif') no-repeat;
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -41,6 +41,10 @@
   position: relative;
   color: #fff;
   padding-bottom: 220px;
+}
+
+.innovation-section .section-title {
+  text-align: left;
 }
 
 .innovation-section .design1 {
@@ -94,6 +98,29 @@
 }
 
 
+.video-wrapper {
+  position: relative;
+  max-height: 90vh;
+}
+
+.video-wrapper>video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* .video-wrapper:after {
+  content: '';
+  background-color: rgba(7, 28, 31, 0.562);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+} */
+
 /* media  */
 @media (max-width:1200px) {
   .innovation-section {
@@ -115,6 +142,7 @@
   .banner-wrapper img {
     min-height: 75vh;
   }
+
   .about-section {
     min-height: 100%;
     padding: 70px 0 !important;

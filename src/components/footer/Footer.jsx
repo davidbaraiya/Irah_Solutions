@@ -29,6 +29,10 @@ const Footer = () => {
       name: "blogs",
       path: "/blogs",
     },
+    {
+      name: "Digital Solution",
+      path: "/digital_solution",
+    },
   ];
 
   return (

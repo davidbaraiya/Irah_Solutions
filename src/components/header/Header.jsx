@@ -15,7 +15,7 @@ import {
   Container,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/images/logo.png";
 
@@ -29,17 +29,21 @@ const navItems = [
     name: "our service",
     path: "/services",
   },
-  {
-    name: "our team",
-    path: "/team",
-  },
-  {
-    name: "career",
-    path: "/career",
-  },
+  // {
+  //   name: "our team",
+  //   path: "/team",
+  // },
+  // {
+  //   name: "career",
+  //   path: "/career",
+  // },
   {
     name: "blog",
     path: "/blog",
+  },
+  {
+    name: "Digital Solution",
+    path: "/digital_solution",
   },
 ];
 

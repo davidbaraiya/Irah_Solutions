@@ -1,0 +1,248 @@
+.digital-solution-wrapper .common-banner h2 {
+    font-size: 34px !important;
+}
+
+.digital-solution-wrapper .common-banner p {
+    font-size: 15px !important;
+}
+
+.digital-tab {
+    background: #242A33;
+    padding: 80px 0;
+}
+
+.digital-tab-inner {
+    background: #242A33 !important;
+    color: #fff;
+}
+
+.tab-links button {
+    color: #fff;
+    text-transform: capitalize;
+    align-items: flex-start;
+}
+
+.tab-links {
+    border-color: #4d5a6d !important;
+    flex-shrink: 0;
+}
+
+.tab-links button.Mui-selected {
+    color: #69E166;
+}
+
+.css-1aquho2-MuiTabs-indicator,
+.css-10d9dml-MuiTabs-indicator {
+    background-color: #69E166 !important;
+}
+
+.css-1ehaqqx-MuiButtonBase-root-MuiTabScrollButton-root.Mui-disabled,
+.css-145v6pe-MuiButtonBase-root-MuiTabScrollButton-root.Mui-disabled {
+    opacity: 0.3 !important;
+}
+
+.digital-tab-inner li p {
+    font-weight: 400 !important;
+    display: flex;
+    gap: 10px;
+}
+
+.products-info-section {
+    position: relative;
+    background: #242A33 url('../../assets/images/service-bg.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    color: #fff;
+}
+
+.products-info-section .heading {
+    max-width: 800px;
+    width: 100%;
+}
+
+.section-title {
+    text-align: center;
+    /* margin-bottom: 20px; */
+}
+
+.section-title h3 {
+    color: var(--theme-color);
+}
+
+.section-title p {
+    margin-top: 15px;
+}
+
+.irah-superpowers .section-title {
+    margin-bottom: 40px;
+}
+
+.irah-superpowers .lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.irah-superpowers .lists li {
+    box-shadow: 0px 0 20px 2px rgb(0 0 0 /20%);
+    flex: 1 1 48%;
+    width: 48%;
+    padding: 20px 15px;
+    border: 1px solid rgb(93 93 93 / 20%);
+    border-radius: 15px;
+}
+
+.irah-superpowers .lists li h6 {
+    margin-bottom: 10px;
+}
+
+.bottom-section h4 {
+    color: #69E166;
+    margin-bottom: 10px;
+}
+
+.bottom-section ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.slick-slide>div {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 5px 10px;
+}
+
+.slick-prev,
+.slick-next {
+    top: 38% !important;
+    z-index: 9;
+}
+
+.logo-slider .logo-wrapper {
+    padding: 2px 10px;
+    max-width: 65%;
+    width: 100%;
+}
+
+.logo-slider .logo-wrapper img {
+    display: block;
+    object-fit: contain;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+}
+
+.logo-slider .logo-wrapper:hover img {
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: #69E166 !important;
+    font-size: 30px !important;
+}
+
+.testimonial-card {
+    text-align: center;
+    background: var(--dark-color) !important;
+    color: #fff !important;
+    box-shadow: 0px 0 20px 2px rgb(0 0 0 /20%) !important;
+    border: 1px solid rgba(128, 127, 127, 0.322);
+}
+
+.testimonial-card p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 1;
+}
+
+.quote-icon {
+    font-size: 50px;
+    color: var(--theme-color);
+    padding-top: 20px;
+}
+
+.bottom-div {
+    padding: 20px 0;
+}
+
+.bottom-div h6 {
+    margin-bottom: 5px;
+}
+
+.testimonials .section-title {
+    margin-bottom: 40px;
+}
+
+
+@media (max-width:1200px) {
+    .slick-prev {
+        left: 0 !important;
+    }
+
+    .slick-next {
+        right: 0 !important;
+    }
+
+}
+
+@media (max-width:992px) {
+    .digital-tab {
+        padding: 50px 0;
+    }
+}
+
+@media (max-width:767px) {
+    .digital-solution-wrapper .common-banner .MuiGrid-spacing-xs-2 {
+        flex-direction: column-reverse !important;
+    }
+
+    .digital-solution-wrapper .common-banner .MuiGrid-grid-sm-6 {
+        width: 100% !important;
+        flex: 1 1 100% !important;
+        max-width: 100% !important;
+    }
+
+    .digital-solution-wrapper .common-banner .right-side img {
+        margin: auto !important;
+    }
+
+    .digital-solution-wrapper .banner-text br {
+        display: none !important;
+    }
+
+    .digital-tab-inner {
+        flex-wrap: wrap;
+        height: auto !important;
+    }
+
+    .tab-links {
+        border-right: 0 !important;
+        border-bottom: 1px solid transparent;
+    }
+
+    .tab-links {
+        width: 100%;
+    }
+
+    div[role="tabpanel"] .MuiBox-root {
+        padding: 20px 0 0 0 !important;
+    }
+
+    .digital-tab-inner li p {
+        font-size: 14px !important;
+    }
+
+    .irah-superpowers .lists li {
+        flex: 1 1 100%;
+        width: 100%;
+
+    }
+}

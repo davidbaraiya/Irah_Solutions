@@ -1,18 +1,63 @@
 /* eslint-disable no-unused-vars */
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "./home.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
 import banner from "../../assets/images/home-banner.png";
 import design1 from "../../assets/images/design1.png";
 import { Fade } from "react-reveal";
+import ReactPlayer from "react-player";
+import video from "../../assets/images/Irah.mp4";
 
 const Home = () => {
+  const videoRef = useRef(null);
+
+  const handlePlayerReady = () => {
+    const videoElement = videoRef.current?.getInternalPlayer();
+    if (videoElement) {
+      videoElement.play();
+    }
+  };
+
+  useEffect(() => {
+    const videoElement = videoRef.current?.getInternalPlayer();
+
+    const handleVideoEnded = () => {
+      if (videoElement) {
+        videoElement.seekTo(0);
+        videoElement.play();
+      }
+    };
+
+    if (videoElement) {
+      videoElement.addEventListener("ended", handleVideoEnded);
+    }
+
+    return () => {
+      if (videoElement) {
+        videoElement.removeEventListener("ended", handleVideoEnded);
+      }
+    };
+  }, []);
+
   return (
     <>
       <section className="home-banner">
         <Fade>
           <div className="banner-wrapper">
-            <img src={banner} alt="banner" loading="lazy" />
+            <Box className="hm-hero-bottom">
+              <ReactPlayer
+                className="video-wrapper"
+                ref={videoRef}
+                url={video}
+                playing
+                muted
+                loop
+                width="100%"
+                height="100%"
+                onReady={handlePlayerReady}
+              />
+            </Box>
+            {/* <img src={banner} alt="banner" loading="lazy" /> */}
           </div>
         </Fade>
         <Box className="bg-theme tagline">

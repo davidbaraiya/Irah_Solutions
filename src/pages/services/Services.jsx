@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./services.css";
 import CommonBanner from "../../components/common-banner/CommonBanner";
 import { Box, Container, Typography, Grid } from "@mui/material";
@@ -52,6 +52,27 @@ const heroDetail = {
 };
 
 const Services = () => {
+  const [isWebDevActive, setIsWebDevActive] = useState(false);
+  const [isAppDevActive, setIsAppDevActive] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const serviceSection = document.getElementById("service-section");
+      const serviceSectionRect = serviceSection.getBoundingClientRect();
+      const isScrolledIntoView =
+        serviceSectionRect.top <= window.innerHeight &&
+        serviceSectionRect.bottom >= 0;
+
+      setIsWebDevActive(isScrolledIntoView);
+      setIsAppDevActive(isScrolledIntoView);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
       <CommonBanner heroDetail={heroDetail} />
@@ -74,18 +95,22 @@ const Services = () => {
         <Container>
           <Fade>
             <Box className="icon-wrapper">
-              <div className="icon-box">
-                <img src={icon1} alt="icon" />
+              <div className={`icon-box ${isWebDevActive ? "active" : ""}`}>
+                <div className={`icon-box web-dev`}>
+                  <img src={icon1} alt="icon" />
+                </div>
               </div>
               <div className="img-box">
                 <img src={circle_img} alt="img" />
               </div>
-              <div className="icon-box">
-                <img src={icon2} alt="icon" />
+              <div className={`icon-box ${isWebDevActive ? "active" : ""}`}>
+                <div className={`icon-box app-dev`}>
+                  <img src={icon2} alt="icon" />
+                </div>
               </div>
             </Box>
           </Fade>
-          <Box className="service-details pt">
+          <Box className="service-details pt" id="service-section">
             {serviceTech?.map(({ id, heading, subtitle, img, list }) => (
               <Box key={id} className="pb">
                 <Box
@@ -96,9 +121,9 @@ const Services = () => {
                     flexDirection: { xs: "column", sm: "row" },
                   }}
                 >
-                  <Fade up>
-                    <div className="icon-box">
-                      <img src={img} alt="icon" />
+                  <Fade left>
+                    <div className="icon-box web-dev">
+                      {/* <img src={img} alt="icon" /> */}
                     </div>
                   </Fade>
                   <div>
@@ -139,7 +164,7 @@ const Services = () => {
           <Container>
             <Grid container spacing={2}>
               {serviceData?.map((services, i) => (
-                <Grid item xs={6} sm={6} md={4} lg={3} key={i} className="col">
+                <Grid item xs={6} sm={6} md={4} lg={4} key={i} className="col">
                   <Fade up>
                     <ServiceCard servicesData={services} />
                   </Fade>

@@ -40,6 +40,7 @@
   flex-shrink: 0;
 }
 
+.btn,
 .blog-hero button {
   background-color: #CEE6CD;
   padding: 12px 40px;
@@ -49,9 +50,27 @@
   margin: 30px 0;
 }
 
+.btn:hover,
 .blog-hero button:hover {
   background-color: #a3bba2;
 }
+
+.blogs-section {
+  position: relative;
+}
+
+.blogs-section::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%) skewY(-10deg);
+  background: #6dea6938;
+  height: 500px;
+  z-index: 0;
+}
+
 
 @media (max-width:450px) {
   .blog-hero button {

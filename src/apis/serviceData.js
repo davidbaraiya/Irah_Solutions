@@ -34,36 +34,36 @@ const serviceData = [
     img: service2,
     desc: "Monitoring",
   },
-  {
-    id: 7,
-    img: service3,
-    desc: "Remote support",
-  },
-  {
-    id: 8,
-    img: service4,
-    desc: "Information reporting",
-  },
-  {
-    id: 9,
-    img: service1,
-    desc: "Software as a service",
-  },
-  {
-    id: 10,
-    img: service2,
-    desc: "Software development",
-  },
-  {
-    id: 11,
-    img: service3,
-    desc: "Troubleshooting and technical support",
-  },
-  {
-    id: 12,
-    img: service4,
-    desc: "Technology training",
-  },
+  // {
+  //   id: 7,
+  //   img: service3,
+  //   desc: "Remote support",
+  // },
+  // {
+  //   id: 8,
+  //   img: service4,
+  //   desc: "Information reporting",
+  // },
+  // {
+  //   id: 9,
+  //   img: service1,
+  //   desc: "Software as a service",
+  // },
+  // {
+  //   id: 10,
+  //   img: service2,
+  //   desc: "Software development",
+  // },
+  // {
+  //   id: 11,
+  //   img: service3,
+  //   desc: "Troubleshooting and technical support",
+  // },
+  // {
+  //   id: 12,
+  //   img: service4,
+  //   desc: "Technology training",
+  // },
 ];
 
 export default serviceData;
