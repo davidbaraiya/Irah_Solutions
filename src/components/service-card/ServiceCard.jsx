@@ -8,9 +8,7 @@ const ServiceCard = ({ servicesData }) => {
     <Card sx={{ maxWidth: "100%", width: "100%" }} className="service-card">
       <CardMedia component="img" alt="img" image={img} />
       <CardContent>
-        <Typography variant="body2" color="text.secondary">
-          {desc}
-        </Typography>
+        <Typography variant="body2">{desc}</Typography>
       </CardContent>
     </Card>
   );
