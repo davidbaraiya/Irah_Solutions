@@ -1,6 +1,11 @@
 .blog-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   gap: 60px;
   margin-bottom: 30px;
@@ -11,6 +16,8 @@
 }
 
 .blog-card .blog-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
   flex: 1;
 }
 
@@ -38,7 +45,9 @@
   width: 100%;
   height: 100%;
   display: block;
+  -o-object-fit: cover;
   object-fit: cover;
+  -o-object-position: center;
   object-position: center;
 }
 
@@ -55,9 +64,28 @@
   width: 2px;
   height: 60%;
   background-color: var(--theme-color);
+  -webkit-animation: verticleLine 3s alternate infinite;
   animation: verticleLine 3s alternate infinite;
+  -webkit-animation-delay: 1s;
   animation-delay: 1s;
   opacity: 0;
+}
+
+@-webkit-keyframes verticleLine {
+  0% {
+    opacity: 1;
+    height: 60%;
+  }
+
+  50% {
+    opacity: 0;
+    height: 0%;
+  }
+
+  100% {
+    opacity: 1;
+    height: 60%;
+  }
 }
 
 @keyframes verticleLine {
@@ -99,6 +127,8 @@
   .blog-card .blog-content,
   .blog-card .img-wrapper {
     max-width: 100%;
+    -webkit-box-flex: 1 !important;
+    -ms-flex: 1 1 100% !important;
     flex: 1 1 100% !important;
   }
 

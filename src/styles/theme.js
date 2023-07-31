@@ -15,8 +15,17 @@ const theme = createTheme({
       main: "#1f1f1f",
     },
   },
-  overrides: {
-    MuiContainer: {},
+  components: {
+    MuiContainer: {
+      styleOverrides: {
+        root: {
+          maxWidth: "1200px !important",
+          paddingLeft: "15px !important",
+          paddingRight: "15px !important",
+          width: "100%",
+        },
+      },
+    },
   },
   breakpoints: {
     values: {

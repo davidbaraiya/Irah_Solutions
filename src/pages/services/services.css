@@ -167,7 +167,7 @@
 .icon-box.active .app-dev {
   /*transform: translate(9px, 532px);
   left: 15px;  */
-  transform: translate(-1059px, 502px);
+  transform: translate(-959px, 512px);
 
 }
 
@@ -209,7 +209,7 @@
 
   .icon-box.active .app-dev {
     /* transform: translate(-3px, 532px); */
-    transform: translate(-809px, 492px);
+    transform: translate(-815px, 532px);
   }
 }
 
@@ -231,7 +231,7 @@
 
   .icon-box.active .app-dev {
     /* transform: translate(-1px, 532px); */
-    transform: translate(-771px, 502px);
+    transform: translate(-777px, 500px);
   }
 
 }
@@ -280,7 +280,7 @@
   .icon-box.active .app-dev {
     /* transform: translate(-22px, 496px);
     top: -80px; */
-    transform: translate(-600px, 479px);
+    transform: translate(-604px, 479px);
   }
 }
 
@@ -302,7 +302,7 @@
     /* transform: translate(-12px, 491px);
     left: 15px;
     top: -20px; */
-    transform: translate(-456px, 411px);
+    transform: translate(-470px, 411px);
   }
 
   .icon-box.active .web-dev {
@@ -314,7 +314,7 @@
   .icon-box.active .app-dev {
     /*transform: translate(-9px, 491px);
     */
-    transform: translate(-440px, 410px);
+    transform: translate(-449px, 410px);
     left: auto;
   }
 
@@ -328,7 +328,7 @@
   }
 
   .icon-box.active .app-dev {
-    transform: translate(-304px, 458px);
+    transform: translate(-234px, 460px);
     /*left: 15px;*/
 
   }

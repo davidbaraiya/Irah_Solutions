@@ -63,13 +63,8 @@ const Form = () => {
         className="btn-wrapper"
         style={{ display: "flex", justifyContent: "flex-end" }}
       >
-        <Button
-          type="submit"
-          color="primary"
-          variant="contained"
-          className="mt-3 w-100"
-        >
-          Log In
+        <Button type="submit" color="primary" variant="contained">
+          Book a Demo Free
         </Button>
       </div>
     </form>

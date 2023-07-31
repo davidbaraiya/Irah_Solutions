@@ -16,6 +16,8 @@
   width: 100%;
   height: 400px;
   background-color: var(--theme-color);
+  -webkit-transform: translateY(-50%) skewY(-10deg);
+  -ms-transform: translateY(-50%) skewY(-10deg);
   transform: translateY(-50%) skewY(-10deg);
   opacity: 0.4;
 

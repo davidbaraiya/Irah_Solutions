@@ -181,7 +181,7 @@ const DigitalSolution = () => {
               </Button>
             </div>
           </Fade>
-          <Dialog open={modalOpen} onClose={handleModalClose}>
+          <Dialog open={modalOpen} onClose={handleModalClose} className="demo">
             <div className="form-wrapper">
               <Form />
             </div>
