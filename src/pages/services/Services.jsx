@@ -16,25 +16,24 @@ const serviceTech = [
   {
     id: 1,
     img: icon1,
-    heading: "Software Development",
+    heading: "Technology",
     subtitle: "“Transforming Ideas into Playable Art”",
     list: [
-      "Multi-Gaming Platforms",
-      "Card Games",
-      "Casual Games",
-      "Fantasy Sports",
+      " Mobile application development",
+      "web application development",
+      "CRM & ERP solutions",
     ],
   },
   {
     id: 2,
     img: icon2,
-    heading: "Application Development",
-    subtitle: "“Revolutionizing the Finance Industry with Technology”",
+    heading: "Media & marketing",
+    subtitle: "“Revolutinizing the market industires”",
     list: [
-      "Payment Gateway:",
-      "Digital Wallets:",
-      "P2P lending:",
-      "International Payments:",
+      ,
+      "Affiliate Marketing",
+      "Digi6tal Marketing",
+      "Performance Marketing",
     ],
   },
 ];
@@ -79,7 +78,7 @@ const Services = () => {
       <section className="service-provide pb bg-dark pt">
         <Container>
           <Box up cascade>
-            <Typography variant="h6">
+            <Typography variant="h6" style={{ fontStyle: "italic !important" }}>
               <Fade left cascade>
                 We are not just a product company; we are a team of dreamers,
                 creators, and problem solvers who dare to push boundaries and

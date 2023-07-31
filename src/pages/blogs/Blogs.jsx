@@ -57,15 +57,16 @@ const Blogs = () => {
                       SS provides On Demand Products & Growth expertise to fast
                       growing technology Startups.
                     </Typography>
-                    <Button className="btn">
+                    {/* <Button className="btn">
                       Schedule an introductory call
-                    </Button>
+                    </Button> */}
                   </div>
                 </Slide>
                 <Stack
                   direction={{ xs: "column", sm: "row" }}
                   alignItems={{ xs: "flex-start", sm: "center" }}
                   gap={3}
+                  marginTop={"30px"}
                 >
                   {strategyData?.map(({ id, icon, title }) => (
                     <div className="strategy-box" key={id}>

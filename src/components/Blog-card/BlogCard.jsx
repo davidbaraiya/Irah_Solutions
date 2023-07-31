@@ -1,6 +1,6 @@
 import "./blog_card.css";
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import { Zoom, Fade } from "react-reveal";
 const BlogCard = ({ blogData, flexCoulum }) => {
   const { title, description, image } = blogData;
@@ -21,6 +21,9 @@ const BlogCard = ({ blogData, flexCoulum }) => {
         <Fade up>
           <div className="para-div">
             <Typography component={"p"}>{description}</Typography>
+            <Button className="readmore-btn btn" sx={{ marginTop: "15px" }}>
+              Read More
+            </Button>
           </div>
         </Fade>
       </div>

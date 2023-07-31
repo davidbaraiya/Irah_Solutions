@@ -6,6 +6,7 @@
   line-height: 1.4 !important;
   font-size: 36px !important;
   font-family: var(--second-font) !important;
+  font-style: italic !important;
 }
 
 .icon-wrapper {
@@ -83,6 +84,7 @@
   font-weight: 300 !important;
   font-size: 18px;
   font-family: var(--second-font) !important;
+  text-transform: capitalize;
 }
 
 .service-details ul li:before {
@@ -165,7 +167,7 @@
 .icon-box.active .app-dev {
   /*transform: translate(9px, 532px);
   left: 15px;  */
-  transform: translate(-949px, 532px);
+  transform: translate(-1059px, 502px);
 
 }
 
@@ -207,7 +209,7 @@
 
   .icon-box.active .app-dev {
     /* transform: translate(-3px, 532px); */
-    transform: translate(-815px, 532px);
+    transform: translate(-809px, 492px);
   }
 }
 
@@ -229,7 +231,7 @@
 
   .icon-box.active .app-dev {
     /* transform: translate(-1px, 532px); */
-    transform: translate(-775px, 532px);
+    transform: translate(-771px, 502px);
   }
 
 }
@@ -278,7 +280,7 @@
   .icon-box.active .app-dev {
     /* transform: translate(-22px, 496px);
     top: -80px; */
-    transform: translate(-603px, 496px);
+    transform: translate(-600px, 479px);
   }
 }
 
@@ -300,7 +302,7 @@
     /* transform: translate(-12px, 491px);
     left: 15px;
     top: -20px; */
-    transform: translate(-460px, 441px);
+    transform: translate(-456px, 411px);
   }
 
   .icon-box.active .web-dev {
@@ -312,7 +314,7 @@
   .icon-box.active .app-dev {
     /*transform: translate(-9px, 491px);
     */
-    transform: translate(-450px, 491px);
+    transform: translate(-440px, 410px);
     left: auto;
   }
 
@@ -326,13 +328,13 @@
   }
 
   .icon-box.active .app-dev {
-    transform: translate(-330px, 491px);
+    transform: translate(-304px, 458px);
     /*left: 15px;*/
 
   }
 
   .icon-box.active .web-dev {
-    transform: translate(-23px, 168px);
+    transform: translate(-15px, 168px);
 
   }
 }

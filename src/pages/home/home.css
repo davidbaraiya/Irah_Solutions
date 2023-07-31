@@ -1,3 +1,20 @@
+.banner-wrapper {
+  position: relative;
+
+}
+
+.banner-wrapper .banner-content {
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  font-size: 42px;
+  width: max-content;
+  text-align: center;
+}
+
 .banner-wrapper img {
   width: 100%;
   min-height: 90vh;
@@ -131,6 +148,11 @@
     min-height: 100%;
     padding: 100px 0 !important;
   }
+
+  .banner-wrapper .banner-content {
+    width: auto;
+    font-size: 32px;
+  }
 }
 
 
@@ -149,10 +171,14 @@
   }
 
   .about-section p {
-    font-size: 18px !important;
+    font-size: 15px !important;
   }
 
   .about-section p br {
     display: none !important;
+  }
+
+  .banner-wrapper .banner-content {
+    font-size: 26px;
   }
 }

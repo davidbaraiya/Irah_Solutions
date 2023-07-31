@@ -73,6 +73,9 @@
     color: var(--theme-color) !important;
 }
 
+.menuItem svg {
+    fill: #fff !important;
+}
 
 @media (max-width:767px) {
     .nav-link button {

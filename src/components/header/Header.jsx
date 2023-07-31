@@ -122,7 +122,7 @@ function Header(props) {
               ))}
             </Box>
             <IconButton
-              color="inherit"
+              className="menuItem"
               aria-label="open drawer"
               edge="start"
               onClick={handleDrawerToggle}

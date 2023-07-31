@@ -2,11 +2,11 @@
 import React, { useEffect, useRef } from "react";
 import "./home.css";
 import { Box, Container, Grid, Typography } from "@mui/material";
-import banner from "../../assets/images/home-banner.png";
 import design1 from "../../assets/images/design1.png";
 import { Fade } from "react-reveal";
 import ReactPlayer from "react-player";
 import video from "../../assets/images/Irah.mp4";
+import Typewriter from "typewriter-effect";
 
 const Home = () => {
   const videoRef = useRef(null);
@@ -56,6 +56,21 @@ const Home = () => {
                 height="100%"
                 onReady={handlePlayerReady}
               />
+              <div className="banner-content d-flex">
+                <Typewriter
+                  options={{
+                    strings: [
+                      "Welcome to the Technology",
+                      "We build and create",
+                      "Make life simple",
+                      "It is really that easy for you, and for us",
+                    ],
+                    autoStart: true,
+                    loop: true,
+                    delay: 100,
+                  }}
+                />
+              </div>
             </Box>
             {/* <img src={banner} alt="banner" loading="lazy" /> */}
           </div>
@@ -91,7 +106,7 @@ const Home = () => {
           </Container>
         </Box>
       </section>
-      <section className="about-section pt">
+      <section className="about-section pt pb">
         <Container>
           <Fade up cascade>
             <div>
@@ -99,9 +114,21 @@ const Home = () => {
                 About us
               </Typography>
               <Typography variant="h6" component="p" color="#fff">
-                Powerful IT Solutions With Irah. <br /> We are a team of
-                talented developers, programmers, and everything your tech
-                requires.
+                A division of Irah Solution, we are an India based company
+                providing digital communications, web and mobile solutions to
+                clients. We provide state of the art application development
+                solutions using the latest technologies. With Quality and User
+                experience at the core of our way of working, our team of
+                designers and developers work to make things simpler, faster,
+                and better to use.
+              </Typography>
+              <Typography variant="h6" component="p" color="#fff" mt={4}>
+                Our offering includes various engagement models so we can serve
+                the purpose of the client business whether it be a start up
+                which is currently in the vision and strategy stage or clients
+                with an existing user base. We work on creating and upgrading
+                B2B, B2C mobile, web applications as well websites, digital and
+                social media communication as well as production.
               </Typography>
             </div>
           </Fade>

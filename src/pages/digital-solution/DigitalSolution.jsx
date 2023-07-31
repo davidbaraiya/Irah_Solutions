@@ -9,6 +9,7 @@ import {
   Container,
   Button,
   Grid,
+  Dialog,
 } from "@mui/material";
 import digitalData from "../../apis/digitalData";
 import { Fade } from "react-reveal";
@@ -20,6 +21,7 @@ import Features from "./components/Features";
 import WhyIrah from "./components/WhyIrah";
 import LogoSlider from "./components/LogoSlider";
 import Testimonials from "./components/Testimonials";
+import Form from "../../components/form/Form";
 
 const heroDetail = {
   heroImg: hero_img,
@@ -69,6 +71,7 @@ function a11yProps(index) {
 }
 
 const DigitalSolution = () => {
+  const [modalOpen, setModalOpen] = useState(false);
   const [screenSize, setScreenSize] = useState(
     window.innerWidth <= 767 ? true : false
   );
@@ -83,6 +86,15 @@ const DigitalSolution = () => {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
+
+  // handle Modal Open
+  const handleModalOpen = () => {
+    setModalOpen(true);
+  };
+
+  const handleModalClose = () => {
+    setModalOpen(false);
+  };
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -164,9 +176,16 @@ const DigitalSolution = () => {
                 and Machine learning systems have got you covered. Choose from
                 plans tailored to your requirements and leave the rest to her!
               </Typography>
-              <Button className="btn">Book a Free Demo</Button>
+              <Button className="btn" onClick={handleModalOpen}>
+                Book a Free Demo
+              </Button>
             </div>
           </Fade>
+          <Dialog open={modalOpen} onClose={handleModalClose}>
+            <div className="form-wrapper">
+              <Form />
+            </div>
+          </Dialog>
         </Container>
       </section>
       <Superpower />

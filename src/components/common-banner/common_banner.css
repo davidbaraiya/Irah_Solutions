@@ -8,6 +8,19 @@
   color: #fff !important;
 }
 
+.common-banner::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 400px;
+  background-color: var(--theme-color);
+  transform: translateY(-50%) skewY(-10deg);
+  opacity: 0.4;
+
+}
+
 .common-banner img {
   max-width: 500px;
   width: 100%;

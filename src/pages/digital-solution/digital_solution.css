@@ -142,6 +142,16 @@
     -webkit-filter: grayscale(0);
 }
 
+.testimonials .slick-next,
+.logo-slider .slick-next {
+    right: 5px;
+}
+
+.testimonials .slick-prev,
+.logo-slider .slick-prev {
+    left: 5px;
+}
+
 .slick-prev:before,
 .slick-next:before {
     color: #69E166 !important;
@@ -181,6 +191,23 @@
     margin-bottom: 40px;
 }
 
+.form-wrapper {
+    background-color: #fff;
+    padding: 30px 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    color: #000;
+}
+
+.MuiInput-root:before {
+    border-bottom: 1px solid #333 !important;
+}
+
+.form-wrapper button[type="submit"] {
+    margin-top: 20px;
+    color: #fff;
+    margin-left: auto;
+}
 
 @media (max-width:1200px) {
     .slick-prev {
