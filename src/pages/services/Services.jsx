@@ -7,7 +7,7 @@ import icon2 from "../../assets/icons/app-dev.svg";
 import circle_img from "../../assets/images/circle-img.png";
 import ser_design1 from "../../assets/images/ser-design1.svg";
 import ser_design2 from "../../assets/images/ser-design2.svg";
-import ServiceCard from "../../components/service-card/serviceCard";
+import ServiceCard from "../../components/service-card/ServiceCard";
 import serviceData from "../../apis/serviceData";
 import hero_img from "../../assets/images/service-hero.png";
 import { Fade } from "react-reveal";
