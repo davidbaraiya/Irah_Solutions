@@ -1,8 +1,7 @@
 import React from "react";
 import "./blog.css";
-import { Box, Button, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import BlogCard from "../../components/Blog-card/BlogCard";
-import blogData from "../../apis/blogData";
 import blog_img from "../../assets/images/blog-side.png";
 import blog_hero from "../../assets/images/blog-hero.png";
 import strategy from "../../assets/icons/strategy.svg";
@@ -10,6 +9,8 @@ import growth from "../../assets/icons/growth.svg";
 import talent from "../../assets/icons/talent.svg";
 import { Fade, Zoom, Slide } from "react-reveal";
 import Matrix from "../../components/Matrix";
+import technologyBlogsData from "../../apis/blogData/technologyBlogsData";
+import mediaMarketingBlogsData from "../../apis/blogData/mediaMarketingBlogsData";
 
 const Blogs = () => {
   const strategyData = [
@@ -106,8 +107,23 @@ const Blogs = () => {
                 Blog
               </Typography>
             </Zoom>
-            <Box>
-              {blogData?.map((blogData, index) => (
+            <Box className="bog-data-div">
+              <div className="title">
+                <h3>Technology Blogs</h3>
+              </div>
+              {technologyBlogsData?.map((blogData, index) => (
+                <BlogCard
+                  key={blogData.id}
+                  blogData={blogData}
+                  flexCoulum={index % 2 === 0 ? true : false}
+                />
+              ))}
+            </Box>
+            <Box mt={5} className="bog-data-div">
+              <div className="title">
+                <h3>Media Marketing Blogs</h3>
+              </div>
+              {mediaMarketingBlogsData?.map((blogData, index) => (
                 <BlogCard
                   key={blogData.id}
                   blogData={blogData}

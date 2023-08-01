@@ -221,9 +221,9 @@
 }
 
 .MuiPaper-root[role="dialog"] {
-    background: transparent !important;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
+    background: rgb(0 0 0 / 30%) !important;
+    -webkit-backdrop-filter: blur(35px);
+    backdrop-filter: blur(35px);
     border: 1px solid rgb(255 255 255 / 30%);
     color: #fff !important;
     border-radius: 10px;

@@ -71,6 +71,61 @@
   z-index: 0;
 }
 
+.bog-data-div .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.bog-data-div .title h3 {
+  position: relative;
+  text-align: center;
+  text-transform: capitalize;
+  max-width: max-content;
+}
+
+.details-inner strong {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+}
+
+.bog-data-div .title h3:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -12px;
+  width: 50%;
+  background-color: var(--theme-color);
+  height: 2px;
+  transform: translateX(-50%);
+}
+
+ol.numbers li {
+  list-style-type: auto;
+}
+
+ol.numbers {
+  padding-left: 20px;
+}
+
+.accordion>.Mui-expanded {
+  margin: 0 !important;
+  border-bottom: 1px solid var(--theme-color);
+}
+
+.accordion {
+  /* box-shadow: 0 0 10px rgb(0 0 0 /10%) !important; */
+  box-shadow: none !important;
+  border: 1px solid var(--theme-color);
+  margin-bottom: 10px;
+}
+
+
+.accordion:before {
+  background-color: #000;
+}
 
 @media (max-width:450px) {
   .blog-hero button {

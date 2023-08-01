@@ -6,6 +6,7 @@ import Home from "./pages/home/Home";
 import Services from "./pages/services/Services";
 import Blogs from "./pages/blogs/Blogs";
 import DigitalSolution from "./pages/digital-solution/DigitalSolution";
+import BlogDetails from "./pages/blogs/BlogDetails";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/services" element={<Services />} />
         <Route path="/blog" element={<Blogs />} />
+        <Route path="/blog/blog_details/:id" element={<BlogDetails />} />
         <Route path="/digital_solution" element={<DigitalSolution />} />
       </Routes>
       <Footer />

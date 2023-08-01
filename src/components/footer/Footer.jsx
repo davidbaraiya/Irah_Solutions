@@ -17,17 +17,17 @@ const Footer = () => {
       name: "our service",
       path: "/services",
     },
+    // {
+    //   name: "our team",
+    //   path: "/team",
+    // },
+    // {
+    //   name: "career",
+    //   path: "/career",
+    // },
     {
-      name: "our team",
-      path: "/team",
-    },
-    {
-      name: "career",
-      path: "/career",
-    },
-    {
-      name: "blogs",
-      path: "/blogs",
+      name: "blog",
+      path: "/blog",
     },
     {
       name: "Digital Solution",
