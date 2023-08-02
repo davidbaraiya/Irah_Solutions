@@ -73,7 +73,14 @@
 }
 
 .nav-link .btn {
-    padding: 5px 15px !important;
+    background: #fff !important;
+    border: none !important;
+    padding: 7px 18px !important;
+    border-radius: 8px;
+}
+
+.nav-link .btn:hover {
+    background-color: #fff !important;
 }
 
 .btn::before {

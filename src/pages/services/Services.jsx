@@ -32,7 +32,7 @@ const serviceTech = [
     list: [
       ,
       "Affiliate Marketing",
-      "Digi6tal Marketing",
+      "Digital Marketing",
       "Performance Marketing",
     ],
   },
