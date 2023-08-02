@@ -7,7 +7,7 @@ const serviceData = [
   {
     id: 1,
     img: service1,
-    desc: "Lorem iWebsite Development, Management and Maintenancepsum",
+    desc: "Website Development, Management and Maintenancepsum",
   },
   {
     id: 2,
@@ -34,36 +34,36 @@ const serviceData = [
     img: service2,
     desc: "Monitoring",
   },
-  // {
-  //   id: 7,
-  //   img: service3,
-  //   desc: "Remote support",
-  // },
-  // {
-  //   id: 8,
-  //   img: service4,
-  //   desc: "Information reporting",
-  // },
-  // {
-  //   id: 9,
-  //   img: service1,
-  //   desc: "Software as a service",
-  // },
-  // {
-  //   id: 10,
-  //   img: service2,
-  //   desc: "Software development",
-  // },
-  // {
-  //   id: 11,
-  //   img: service3,
-  //   desc: "Troubleshooting and technical support",
-  // },
-  // {
-  //   id: 12,
-  //   img: service4,
-  //   desc: "Technology training",
-  // },
+  {
+    id: 7,
+    img: service3,
+    desc: "Mobile Application Development",
+  },
+  {
+    id: 8,
+    img: service4,
+    desc: "Web Application Development",
+  },
+  {
+    id: 9,
+    img: service1,
+    desc: "CRM & ERP Solutions",
+  },
+  {
+    id: 10,
+    img: service2,
+    desc: "Affiliate Marketing",
+  },
+  {
+    id: 11,
+    img: service3,
+    desc: "Digital Marketing",
+  },
+  {
+    id: 12,
+    img: service4,
+    desc: "Performance Marketing",
+  },
 ];
 
 export default serviceData;

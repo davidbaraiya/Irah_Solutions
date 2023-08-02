@@ -46,7 +46,7 @@
 }
 
 .desk-logo-wrapper {
-    max-width: 180px;
+    max-width: 70px;
     width: 100%;
     margin-right: auto !important;
 }
@@ -59,14 +59,9 @@
 }
 
 .mobile-menu .mobile-logo-wrapper {
-    max-width: 180px;
+    max-width: 70px;
     padding: 0 15px;
     width: 100%;
-}
-
-.mobile-menu .mobile-logo-wrapper img {
-    filter: invert(1);
-    -webkit-filter: invert(1);
 }
 
 .mobile-menu ul li a.active {
@@ -84,6 +79,6 @@
     }
 
     .desk-logo-wrapper {
-        max-width: 150px;
+        max-width: 50px;
     }
 }
