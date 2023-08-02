@@ -45,6 +45,10 @@ const navItems = [
     name: "Digital Solution",
     path: "/digital_solution",
   },
+  {
+    name: "Life Coaches",
+    path: "/life_coaches",
+  },
 ];
 
 function Header(props) {

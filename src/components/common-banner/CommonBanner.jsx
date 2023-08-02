@@ -5,7 +5,7 @@ import { Fade } from "react-reveal";
 import Matrix from "../Matrix";
 
 const CommonBanner = ({ heroDetail }) => {
-  const { heroImg, title, description } = heroDetail;
+  const { heroImg, title, description, description2 } = heroDetail;
   return (
     <section className="common-banner pt pb">
       <Matrix />
@@ -23,6 +23,7 @@ const CommonBanner = ({ heroDetail }) => {
                   {title}
                 </Typography>
                 <Typography>{description}</Typography>
+                {description2 && <Typography mt={3}>{description2}</Typography>}
               </div>
             </Fade>
           </Grid>

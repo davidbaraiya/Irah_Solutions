@@ -8,7 +8,7 @@
   color: #fff !important;
 }
 
-.common-banner::before {
+/* .common-banner::before {
   content: '';
   position: absolute;
   top: 50%;
@@ -20,8 +20,7 @@
   -ms-transform: translateY(-50%) skewY(-10deg);
   transform: translateY(-50%) skewY(-10deg);
   opacity: 0.4;
-
-}
+} */
 
 .common-banner img {
   max-width: 500px;

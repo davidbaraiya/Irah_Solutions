@@ -7,6 +7,7 @@ import Services from "./pages/services/Services";
 import Blogs from "./pages/blogs/Blogs";
 import DigitalSolution from "./pages/digital-solution/DigitalSolution";
 import BlogDetails from "./pages/blogs/BlogDetails";
+import LifeCoaches from "./pages/life-coaches/LifeCoaches";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
         <Route path="/blog" element={<Blogs />} />
         <Route path="/blog/blog_details/:id" element={<BlogDetails />} />
         <Route path="/digital_solution" element={<DigitalSolution />} />
+        <Route path="/life_coaches" element={<LifeCoaches />} />
       </Routes>
       <Footer />
     </BrowserRouter>

@@ -1,0 +1,44 @@
+.life-coaches-wrapper .title {
+  color: var(--theme-color);
+  margin-bottom: 40px;
+}
+
+.outreach-card {
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 20%);
+  border-radius: 10px;
+  transition: all 0.4s ease-in-out;
+  border: 1px solid #436c42;
+  height: 100%;
+}
+
+.outreach-card:hover {
+  border: 1px solid var(--theme-color);
+  box-shadow: 0 0 20px rgba(105, 225, 102, 0.1);
+}
+
+.outreach-card .icon-wpr {
+  max-width: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.outreach-card .icon-wpr svg {
+  width: 100%;
+  height: 100%;
+}
+
+.outreach-card p {
+  font-size: 20px !important;
+}
+
+
+@media (max-width:575px) {
+  .outreach-card .icon-wpr {
+    max-width: 30px;
+  }
+
+  .outreach-card p {
+    font-size: 16px !important;
+  }
+}
