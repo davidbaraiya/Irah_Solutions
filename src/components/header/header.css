@@ -72,6 +72,14 @@
     fill: #fff !important;
 }
 
+.nav-link .btn {
+    padding: 5px 15px !important;
+}
+
+.btn::before {
+    display: none;
+}
+
 @media (max-width:767px) {
     .nav-link button {
         font-size: 14px !important;

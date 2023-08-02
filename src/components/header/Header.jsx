@@ -114,6 +114,7 @@ function Header(props) {
               {navItems?.map(({ name, path }, i) => (
                 <NavLink to={path} className="nav-link" key={i}>
                   <Button
+                    className={name === "Life Coaches" ? "btn" : null}
                     sx={{
                       color: "#fff",
                       marginLeft: "12px",

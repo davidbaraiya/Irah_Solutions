@@ -13,6 +13,7 @@ import { FiSettings } from "react-icons/fi";
 import { BsPerson } from "react-icons/bs";
 import { CiEdit } from "react-icons/ci";
 import { BiBookOpen } from "react-icons/bi";
+import { Fade } from "react-reveal";
 
 const processOutreach = [
   {
@@ -97,10 +98,12 @@ const LifeCoaches = () => {
           <Grid container spacing={2}>
             {processOutreach?.map(({ id, name, icon }) => (
               <Grid item xs={12} sm={6} md={4} key={id}>
-                <div className="outreach-card">
-                  <div className="icon-wpr">{icon}</div>
-                  <Typography>{name}</Typography>
-                </div>
+                <Fade up cascade>
+                  <div className="outreach-card">
+                    <div className="icon-wpr">{icon}</div>
+                    <Typography>{name}</Typography>
+                  </div>
+                </Fade>
               </Grid>
             ))}
           </Grid>
@@ -119,9 +122,11 @@ const LifeCoaches = () => {
                 display={"flex"}
                 width={"100%"}
               >
-                <div className="outreach-card" style={{ width: "100%" }}>
-                  <Typography>{item}</Typography>
-                </div>
+                <Fade up cascade>
+                  <div className="outreach-card" style={{ width: "100%" }}>
+                    <Typography>{item}</Typography>
+                  </div>
+                </Fade>
               </Grid>
             ))}
           </Grid>

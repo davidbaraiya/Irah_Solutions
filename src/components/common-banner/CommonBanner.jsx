@@ -17,7 +17,7 @@ const CommonBanner = ({ heroDetail }) => {
           flexDirection={{ xs: "column-reverse", sm: "row" }}
         >
           <Grid item sm={6}>
-            <Fade left cascade>
+            <Fade up cascade>
               <div className="left-side">
                 <Typography component="h2" mb={2}>
                   {title}
