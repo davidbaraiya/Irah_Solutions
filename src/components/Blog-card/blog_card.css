@@ -71,13 +71,18 @@
   opacity: 0;
 }
 
-.readmore-btn {
-  background: #fff !important;
-  padding: 12px 30px;
-  border: none !important;
+.btn.readmore-btn {
+  background-color: #fff !important;
+  padding: 12px 25px !important;
+  border: 0 !important;
   font-family: 'Inter' !important;
-  text-transform: capitalize;
-  box-shadow: 6px 6px #4f5668a6;
+  text-transform: capitalize !important;
+  box-shadow: 6px 6px #4f5668a6 !important;
+  line-height: 1;
+}
+
+.btn.readmore-btn:hover {
+  background-color: var(--theme-color) !important;
 }
 
 h4.blog-title {
