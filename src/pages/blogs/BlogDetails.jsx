@@ -26,8 +26,14 @@ const BlogDetails = () => {
     <section className="blog-details-section pt pb">
       <Container>
         <div className="details-inner">
-          <Button sx={{ color: "#333", marginBottom: "20px" }}>
-            <Link to="/blog">
+          <Button
+            sx={{ color: "#333", marginBottom: "20px" }}
+            className="back-btn"
+          >
+            <Link
+              to="/blog"
+              style={{ display: "flex", alignItems: "center", gap: "10px" }}
+            >
               <BsChevronLeft /> go to back
             </Link>
           </Button>
