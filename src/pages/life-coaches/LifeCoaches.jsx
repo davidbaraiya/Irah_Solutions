@@ -82,16 +82,30 @@ const heroDetail = {
   ),
   description:
     " We work with life and business coaches and recognize the importance of entrepreneurs being able to find and utilise their services.",
-  description2:
-    " With high performing keywords and optimised content, we ensure that their services, their motive, their plan and their vision is rightly portrayed in every single content piece. We also ensure that every content is built keeping the algorithm of the platform in mind and the posting is done keep the timezone of your targeted audience.",
+  // description2:
+  //   " With high performing keywords and optimised content, we ensure that their services, their motive, their plan and their vision is rightly portrayed in every single content piece. We also ensure that every content is built keeping the algorithm of the platform in mind and the posting is done keep the timezone of your targeted audience.",
 };
 
 const LifeCoaches = () => {
   return (
     <div className="life-coaches-wrapper">
       <CommonBanner heroDetail={heroDetail} />
+
       <section className="pt pb bg-dark process-outreach">
         <Container>
+          <div style={{ marginBottom: "40px" }}>
+            <h3 className="title" style={{ marginBottom: "20px" }}>
+              Description:
+            </h3>
+            <Typography lineHeight={"1.7 !important"}>
+              With high performing keywords and optimised content, we ensure
+              that their services, their motive, their plan and their vision is
+              rightly portrayed in every single content piece. We also ensure
+              that every content is built keeping the algorithm of the platform
+              in mind and the posting is done keep the timezone of your targeted
+              audience.
+            </Typography>
+          </div>
           <h3 className="title">
             The process of outreach includes the following:
           </h3>
