@@ -47,7 +47,7 @@ const heroDetail = {
     </>
   ),
   description:
-    " We are not just a product company; we are a team of dreamers, creators, and problem solvers who dare to push boundaries and  challenge the status quo. Our products are not just lines of  code, they are experiences that have the power to change the world.",
+    "We are not just a product company; we are a team of dreamers, creators, and problem solvers who dare to push boundaries and  challenge the status quo. Our products are not just lines of  code, they are experiences that have the power to change the world.",
 };
 
 const Services = () => {

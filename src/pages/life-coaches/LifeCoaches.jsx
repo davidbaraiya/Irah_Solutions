@@ -1,4 +1,3 @@
-import React from "react";
 import "./life_coaches.css";
 import CommonBanner from "../../components/common-banner/CommonBanner";
 import hero_img from "../../assets/images/service-hero.png";
@@ -90,7 +89,6 @@ const LifeCoaches = () => {
   return (
     <div className="life-coaches-wrapper">
       <CommonBanner heroDetail={heroDetail} />
-
       <section className="pt pb bg-dark process-outreach">
         <Container>
           <div style={{ marginBottom: "40px" }}>

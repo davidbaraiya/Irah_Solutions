@@ -84,6 +84,28 @@ const BlogDetails = () => {
             ))}
           </div>
         )}
+        {matchSubData.metaDescription && (
+          <div style={{ marginBottom: "30px" }}>
+            <h5 style={{ marginBottom: "10px" }}>Meta Description</h5>
+            <Typography mb={2}>{matchSubData.metaDescription}</Typography>
+          </div>
+        )}
+        {matchSubData.notes && (
+          <div style={{ marginBottom: "40px" }}>
+            <h5 style={{ marginBottom: "20px" }}>Notes</h5>
+            <ul style={{ paddingLeft: "20px" }}>
+              {matchSubData.notes.map((item) => (
+                <li
+                  key={item}
+                  className="notes"
+                  style={{ marginBottom: "20px", listStyleType: "disc" }}
+                >
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
         {matchSubData.conclusion && (
           <div style={{ marginBottom: "30px" }}>
             <h5 style={{ marginBottom: "10px" }}>conclusion</h5>

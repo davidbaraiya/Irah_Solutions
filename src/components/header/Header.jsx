@@ -52,7 +52,6 @@ const navItems = [
 ];
 
 function Header(props) {
-  // const [stickyHeader, setStickyHeader] = useState(false);
   const { window } = props;
   const [mobileOpen, setMobileOpen] = useState(false);
 

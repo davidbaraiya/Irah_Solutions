@@ -5,6 +5,7 @@ import { Container } from "@mui/material";
 import { BsChatSquareQuote } from "react-icons/bs";
 import { Fade } from "react-reveal";
 import Slider from "react-slick";
+import reviewData from "../../../apis/reviewData";
 
 const Testimonials = () => {
   const settings = {
@@ -40,7 +41,7 @@ const Testimonials = () => {
 
         <div className="testimonials-slider">
           <Slider {...settings}>
-            {new Array(6).fill().map((item, i) => {
+            {reviewData?.map(({ quote, author, role }, i) => {
               return (
                 <Card
                   //   sx={{ maxWidth: 345 }}
@@ -52,20 +53,14 @@ const Testimonials = () => {
                       <BsChatSquareQuote />
                     </div>
                     <CardContent>
-                      <Typography>
-                        "Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s,
-                        when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book."
-                      </Typography>
+                      <Typography>{quote}</Typography>
                     </CardContent>
 
                     <div className="bottom-div">
                       <Typography variant="h6" color="#69E166">
-                        john Deo
+                        {author}
                       </Typography>
-                      <Typography>software engineer</Typography>
+                      <Typography>{role}</Typography>
                     </div>
                   </Fade>
                 </Card>

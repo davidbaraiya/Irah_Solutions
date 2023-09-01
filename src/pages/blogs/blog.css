@@ -126,6 +126,10 @@ ol.numbers {
 .accordion:before {
   background-color: #000;
 }
+.blog-details-section p a{
+  color:#2c9529;
+  text-decoration: underline !important;
+}
 
 @media (max-width:450px) {
   .blog-hero button {

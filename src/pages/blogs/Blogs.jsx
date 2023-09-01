@@ -153,7 +153,8 @@ const Blogs = () => {
                 <Fade right cascade>
                   <div className="right-content">
                     <Typography component={"h4"} mb={3} color="#6DEB6A">
-                      Loren Ipsum
+                      Crafting Actionable Product Strategies: Expertise in B2C,
+                      B2B SaaS, B2B2C, Web3 & Deep Tech
                     </Typography>
                     <Typography component={"p"}>
                       We specialise in building actionable product strategy for

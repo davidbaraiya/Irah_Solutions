@@ -1,0 +1,11 @@
+{
+    "name": "Irah Solution",
+    "short_name": "Irah solution",
+    "description": "Unlock Success with Our Expert Digital Marketing Services. Boost Your Online Presence, Drive Traffic, and Convert Customers. Learn More!",
+
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#000000",
+    "theme_color": "#69E166" 
+  }
+  
